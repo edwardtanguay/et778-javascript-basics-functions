@@ -21,3 +21,8 @@ export const task8_onlyLongWords = (text) => {
 	}
 	return foundWords.join(' ');
 }
+
+export const task8_onlyLongWords2 = (inputString) => {
+  const longWords = inputString.match(/\b\w{5,}\b/g) || [];
+  return longWords.join(' ');
+};

@@ -17,4 +17,9 @@ document.querySelector('#app').innerHTML = `
 <p>${show(tasks.task8_onlyLongWords, "Welcome to Wikipedia the free encyclopedia that anyone can edit")}</p>
 <p>${show(tasks.task8_onlyLongWords, "The cat is on the table")}</p>
 <p>${show(tasks.task8_onlyLongWords, "not many long ones here")}</p>
+
+<h2>Task 8 - with regex</h2>
+<p>${show(tasks.task8_onlyLongWords2, "Welcome to Wikipedia the free encyclopedia that anyone can edit")}</p>
+<p>${show(tasks.task8_onlyLongWords2, "The cat is on the table")}</p>
+<p>${show(tasks.task8_onlyLongWords2, "not many long ones here")}</p>
 `
