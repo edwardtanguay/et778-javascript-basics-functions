@@ -26,3 +26,15 @@ export const task8_onlyLongWords2 = (inputString) => {
   const longWords = inputString.match(/\b\w{5,}\b/g) || [];
   return longWords.join(' ');
 };
+
+export const task9_addLeadingZero = (nums) => {
+	const desiredNums = [];
+	for (const num of nums) {
+		if (num < 10 && num >= 0) {
+			desiredNums.push(`0${num}`);
+		} else {
+			desiredNums.push(String(num))
+		}
+	}
+	return desiredNums;
+}; 

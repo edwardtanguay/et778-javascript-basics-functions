@@ -1,16 +1,16 @@
-import './style.css'
+import './style.css';
 import * as tasks from './tasks';
 
 const show = (func, params) => {
   return `${params} ==> <b>${func(params)}</b>`;
-}
+};
 
 document.querySelector('#app').innerHTML = `
 <h1>JavaScript Function Practice</h1>
 
 <h2>Task 7</h2>
-<p>${show(tasks.task7_numbersDivisibleBy3, [1,2,3,4,5,6,7,8,9])}</p>
-<p>${show(tasks.task7_numbersDivisibleBy3, [2,4,8])}</p>
+<p>${show(tasks.task7_numbersDivisibleBy3, [1, 2, 3, 4, 5, 6, 7, 8, 9])}</p>
+<p>${show(tasks.task7_numbersDivisibleBy3, [2, 4, 8])}</p>
 <p>${show(tasks.task7_numbersDivisibleBy3, [9])}</p>
 
 <h2>Task 8</h2>
@@ -22,4 +22,9 @@ document.querySelector('#app').innerHTML = `
 <p>${show(tasks.task8_onlyLongWords2, "Welcome to Wikipedia the free encyclopedia that anyone can edit")}</p>
 <p>${show(tasks.task8_onlyLongWords2, "The cat is on the table")}</p>
 <p>${show(tasks.task8_onlyLongWords2, "not many long ones here")}</p>
-`
+
+<h2>Task 9</h2>
+<p>${show(tasks.task9_addLeadingZero, [0, 1, 2, 3, 10, 11, 12])}
+<p>${show(tasks.task9_addLeadingZero, [1, 100])}
+<p>${show(tasks.task9_addLeadingZero, [1, 2, 3])}
+`;
