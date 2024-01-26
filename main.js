@@ -12,4 +12,9 @@ document.querySelector('#app').innerHTML = `
 <p>${show(tasks.task7_numbersDivisibleBy3, [1,2,3,4,5,6,7,8,9])}</p>
 <p>${show(tasks.task7_numbersDivisibleBy3, [2,4,8])}</p>
 <p>${show(tasks.task7_numbersDivisibleBy3, [9])}</p>
+
+<h2>Task 8</h2>
+<p>${show(tasks.task8_onlyLongWords, "Welcome to Wikipedia the free encyclopedia that anyone can edit")}</p>
+<p>${show(tasks.task8_onlyLongWords, "The cat is on the table")}</p>
+<p>${show(tasks.task8_onlyLongWords, "not many long ones here")}</p>
 `
